@@ -176,3 +176,56 @@ section:nth-child(even){
     color: #9b59b6;
     background: #fff;
 }
+
+.dikey-cizgi{
+    height: 50vh;
+    width: 1px;
+    border-left: 3px solid #9b59b6;
+}
+
+#iletisim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iletisim-sol{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#iletisim-sol i{
+    color: #444;
+    text-align: center;
+    margin-right: .5em;
+}
+
+#iletisim-sol ul{
+    list-style-type: none;
+    font-size: 1.3em;
+}
+
+#iletisim-sol ul li{
+    padding: .5em;
+}
+
+#iletisim-sol ul li a{
+    text-decoration: none;
+    color: #9b59b6;
+}
+
+#iletisim-harita{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#iletisim-sag{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
