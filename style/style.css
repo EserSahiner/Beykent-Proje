@@ -95,3 +95,28 @@ section:nth-child(even){
 #intro-image img{
     width: 100%;
 }
+
+#toTop{
+    text-decoration: none;
+    color: #fff;
+    background-color: #9b59b6;
+    display: flex;
+    height: 80px; width: 80px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-size: 2em;
+    bottom: 1px;
+    right: 32px;
+    opacity: 0;
+    transition: all .4s ease;
+    pointer-events: none;
+}
+
+#toTop.active{
+    bottom: 32px;
+    opacity: 1;
+    pointer-events: auto;
+}
