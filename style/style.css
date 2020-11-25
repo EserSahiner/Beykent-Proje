@@ -26,9 +26,14 @@ body{
     padding: 0em 1em;
     flex-wrap: wrap;
     background: #fff;
+    transition: all 1s ease;
+    position: fixed;
+}
+
+#menu-container.active{
     position: fixed;
     top: 0; left: 0;
-
+    background: rgba(0, 0, 0, 0);
 }
 
 #menu-container ul{
