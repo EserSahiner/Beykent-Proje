@@ -66,17 +66,12 @@
         <div class="dikey-cizgi"></div>
         <div id="iletisim-sag">
             <h1>İletişim Formu</h1>
-            <form>
-                Ad: <input type="text"> Soyad: <input type="text">
-                <br><br>
-                E-Posta: <input type="email">
-                <br><br>
-                Mesaj: 
-                <br>
-                <textarea name="mesaj" id="iletisim-mesaj" cols="60" rows="10"></textarea>
-                <br><br>
-                <button class="" type="submit">Gönder</button> <button type="reset">Formu Sıfırla</button>
-            </form>
+            <div class="iletisim-form">
+                <input type="text" name="name" placeholder="Eser" required>
+                <input type="text" name="surname" placeholder="Şahiner">
+                <input type="email" name="email" placeholder="esershnr@gmail.com">
+                <textarea name="message" id="iletisim-mesaj" cols="30" rows="10" placeholder="Mesajınız"></textarea>
+            </div>
         </div>
     </section>
     <a href="#" id="toTop"><i class="fas fa-chevron-up"></i></a>
