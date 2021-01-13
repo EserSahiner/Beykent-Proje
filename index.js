@@ -10,3 +10,14 @@ window.addEventListener('scroll', () => {
         menu.classList.remove('active');
     }
 }) 
+
+
+const btnRes = document.querySelector('.res-btn');
+
+const ulMenu = document.querySelector('.navbar-ul');
+
+
+
+btnRes.addEventListener('click', () => {
+    ulMenu.classList.toggle('responsive-m');
+});

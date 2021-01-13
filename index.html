@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/71651d5108.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
     <title>Eser Şahiner</title>
 </head>
 <body>
-    <div id="menu-container">
+    <div id="menu-container" class="res-menu">
         <div id="logo">
             <img src="images/eserşahiner-logo.png" alt="Logo">
         </div>
-        <ul>
-            <li><a href="#anasayfa">Anasayfa</a></li>
-            <li><a href="#hakkimda">Hakkımda</a></li>
-            <li><a href="#iletisim">İletişim</a></li>
+        <ul class="navbar-ul">
+            <li class="navbar-li"><a href="#anasayfa">Anasayfa</a></li>
+            <li class="navbar-li"><a href="#hakkimda">Hakkımda</a></li>
+            <li class="navbar-li"><a href="#iletisim">İletişim</a></li>
         </ul>
+        <div class="res-btn">
+            <a class="res-btn-a"><i class="fas fa-plus"></i></a>
+        </div>
     </div>
     <section id="anasayfa" data-text="Anasayfa">
         <div id="intro-text">
@@ -60,17 +62,17 @@
             </ul>
             <div id="iletisim-harita">
                 <h1><i class="fas fa-map"></i> Harita</h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12048.836308145004!2d29.064416113311797!3d40.97690242804448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d334dda1c2b6de!2zw5Z6Z8O8cmzDvGsgUGFya8Sx!5e0!3m2!1str!2str!4v1606302511551!5m2!1str!2str" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12048.836308145004!2d29.064416113311797!3d40.97690242804448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d334dda1c2b6de!2zw5Z6Z8O8cmzDvGsgUGFya8Sx!5e0!3m2!1str!2str!4v1606302511551!5m2!1str!2str" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
         <div class="dikey-cizgi"></div>
         <div id="iletisim-sag">
             <h1>İletişim Formu</h1>
             <div class="iletisim-form">
-                <input type="text" name="name" placeholder="Eser" required>
-                <input type="text" name="surname" placeholder="Şahiner">
-                <input type="email" name="email" placeholder="esershnr@gmail.com">
-                <textarea name="message" id="iletisim-mesaj" cols="30" rows="10" placeholder="Mesajınız"></textarea>
+                <input class="input-form" type="text" name="name" placeholder="Eser" required>
+                <input class="input-form" type="text" name="surname" placeholder="Şahiner">
+                <input class="input-form" type="email" name="email" placeholder="esershnr@gmail.com">
+                <textarea class="input-form" name="message" id="iletisim-mesaj" cols="30" rows="10" placeholder="Mesajınız"></textarea>
             </div>
         </div>
     </section>
