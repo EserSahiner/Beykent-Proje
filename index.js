@@ -1,5 +1,20 @@
 const toTop = document.querySelector('#toTop');
+
+const icon = document.querySelector('.fas');
+
 const menu = document.querySelector('#menu-container');
+
+const btnModal = document.querySelector('.btn-1');
+
+const modal = document.querySelector('.modal-bg');
+
+const modalReal = document.querySelector('.modal-bio')
+
+const modalQuit = document.querySelector('.modal-kapat');
+
+const btnRes = document.querySelector('.res-btn');
+
+const ulMenu = document.querySelector('.navbar-ul');
 
 window.addEventListener('scroll', () => {
     if(window.pageYOffset > 115){
@@ -11,25 +26,11 @@ window.addEventListener('scroll', () => {
     }
 }) 
 
-
-const btnRes = document.querySelector('.res-btn');
-
-const ulMenu = document.querySelector('.navbar-ul');
-
-
-
 btnRes.addEventListener('click', () => {
     ulMenu.classList.toggle('responsive-m');
-});
-
-const btnModal = document.querySelector('.btn-1');
-
-const modal = document.querySelector('.modal-bg');
-
-const modalReal = document.querySelector('.modal-bio')
-
-const modalQuit = document.querySelector('.modal-kapat');
-
+    icon.classList.toggle('fa-plus');
+    icon.classList.toggle('fa-minus');
+})
 
 btnModal.addEventListener('click', ()=>{
     modal.classList.add('active');
