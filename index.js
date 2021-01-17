@@ -16,6 +16,8 @@ const btnRes = document.querySelector('.res-btn');
 
 const ulMenu = document.querySelector('.navbar-ul');
 
+const mobileMenu = document.querySelector('.mobile-menu-l');
+
 window.addEventListener('scroll', () => {
     if(window.pageYOffset > 115){
         toTop.classList.add('active');
@@ -30,6 +32,7 @@ btnRes.addEventListener('click', () => {
     ulMenu.classList.toggle('responsive-m');
     icon.classList.toggle('fa-plus');
     icon.classList.toggle('fa-minus');
+    mobileMenu.classList.toggle('responsive-m');
 })
 
 btnModal.addEventListener('click', ()=>{
