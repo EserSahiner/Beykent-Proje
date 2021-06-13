@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/71651d5108.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <script src="jquery-3.6.0.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,900;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.css">
     <title>Eser Şahiner</title>
 </head>
 <body>
@@ -22,6 +26,7 @@
         <ul class="navbar-ul">
             <li class="navbar-li"><a href="#anasayfa">Anasayfa</a></li>
             <li class="navbar-li"><a href="#hakkimda">Hakkımda</a></li>
+            <li class="navbar-li"><a href="#calismalarim">Çalışmalarım</a></li>
             <li class="navbar-li"><a href="#iletisim">İletişim</a></li>
         </ul>
         
@@ -33,6 +38,7 @@
         <div id="particles-js"></div>
         <div class="jb-content">
             <img src="images/eserşahiner-logo.png" alt="00" width="500" height="80">
+            <h3 class="j-slogan">Anormal değil, sade & minimal</h3>
         </div>
     </section>
     <section id="anasayfa" data-text="Anasayfa">
@@ -66,6 +72,16 @@
             </div>
         </div>
     </section>
+
+    <section id="calismalarim" data-text="Çalışmalarım">
+        <h1>ÇALIŞMALARIM</h1>
+        <div class="port-cont">
+            <a class="galeri" href="calismalar/pexels-1.jpg" data-lightbox="image-1" data-title="Çalışma 1"><img src="calismalar/pexels-1.jpg" alt="Çalışma 1" width="300" height="400"></a>
+            <a class="galeri" href="calismalar/pexels-2.jpg" data-lightbox="image-2" data-title="Çalışma 2"><img src="calismalar/pexels-2.jpg" alt="Çalışma 2" width="300" height="400"></a>
+            <a class="galeri" href="calismalar/pexels-3.jpg" data-lightbox="image-3" data-title="Çalışma 3"><img src="calismalar/pexels-3.jpg" alt="Çalışma 3" width="300" height="400"></a>
+        </div>
+    </section>
+
     <section id="iletisim" data-text="İletişim">
         <div id="iletisim-sol">
             <ul>
@@ -113,9 +129,24 @@
             </div>
         </div>
     </div>
+
+
     <a href="#" id="toTop"><i class="fas fa-chevron-up"></i></a>
+
+
+    <div class="yukanim">
+        <span class="loader"><span class="loader-inner"></span></span>
+        <h1>YÜKLENİYOR...</h1>
+    </div>
+    <script>
+        $(window).on("load",function(){
+          $(".yukanim").fadeOut("slow");
+        });
+    </script>
     <script src="particles.js"></script>
     <script src="index.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/71651d5108.js" crossorigin="anonymous"></script>
+    
   </body>
 <html>
